@@ -1,7 +1,10 @@
 $bgColor:rgb(255, 255, 255);
 $stripeColor1:#2c6fffa8;
 $textColor:rgb(50, 50, 50);
-// $bgColor:rgb(255, 220, 255);
+$mainColor:rgb(40, 109, 167);
+
+
+
 
 .image {
         text-align: center;
@@ -11,6 +14,7 @@ $textColor:rgb(50, 50, 50);
         img {
                 width: 100%;
         }
+
 }
 
 .image02 {
@@ -21,17 +25,29 @@ $textColor:rgb(50, 50, 50);
         }
 }
 
-.container1 {
-        text-align: center;
+// .container1 {
+//         text-align: center;
 
-        p {
-                display: inline-block;
-                font-size: 2vw;
-        }
-}
+//         p {
+//                 display: inline-block;
+//                 font-size: 2vw;
+//         }
+// }
 
 body {
         background-color: $bgColor;
+
+        background-image: linear-gradient(-45deg, white 25%, rgba(120, 180, 255, 0.1) 25%, rgba(120, 180, 255, 0.1) 50%, white 50%, white 75%, rgba(120, 180, 255, 0.1) 75%, rgba(120, 180, 255, 0.1));
+        background-size: 30px 30px;
+        font-color: rgba(120, 180, 255, 0.1);
+
+        margin: 0px;
+        padding: 0px;
+        font-family: "Hiragino Kaku Gothic ProN",
+                "meiryo",
+                sans-serif;
+
+        font-weight: normal;
 
         h3 {
                 position: relative;
@@ -48,6 +64,8 @@ body {
                 background: -webkit-repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
                 background: repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
         }
+
+
 }
 
 section {
@@ -86,7 +104,7 @@ section {
 
                 @media screen and (min-width:1024px) {
                         /*　画面サイズが1024pxからはここを読み込む　*/
-                        color: rgb(233, 91, 150);
+                        color: $mainColor;
                         font-size: 2vw;
                 }
         }
@@ -95,32 +113,32 @@ section {
                 text-align: center;
                 // font-size: 30px;
                 font-size: 4vw;
-                color: rgb(0, 159, 187);
+                color: $mainColor;
 
                 @media screen and (min-width:768px) and (max-width:1024px) {
 
                         /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-                        color: rgb(0, 67, 190);
                         font-size: 24px;
                 }
 
                 @media screen and (min-width:1024px) {
                         /*　画面サイズが1024pxからはここを読み込む　*/
-                        color: rgb(66, 62, 255);
                         font-size: 30px;
                 }
         }
 
         p {
                 margin: 10px 4vw;
+                padding-bottom: 10px;
                 line-height: 1.7;
-                font-size: 14px;
+                font-size: 17px;
         }
 
         .highlight {
                 font-weight: bold;
-                border-bottom: solid 2px rgba(55, 200, 245, 0.596);
+                border-bottom: solid 2px rgba(30, 210, 120, 0.6);
         }
+
 
 
 }
@@ -135,4 +153,6 @@ footer {
                 color: black;
                 border: solid 4px rgba(255, 255, 255, 0);
         }
+
+
 }

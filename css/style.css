@@ -15,17 +15,15 @@
   width: 70%;
 }
 
-.container1 {
-  text-align: center;
-}
-
-.container1 p {
-  display: inline-block;
-  font-size: 2vw;
-}
-
 body {
   background-color: white;
+  background-image: linear-gradient(-45deg, white 25%, rgba(120, 180, 255, 0.1) 25%, rgba(120, 180, 255, 0.1) 50%, white 50%, white 75%, rgba(120, 180, 255, 0.1) 75%, rgba(120, 180, 255, 0.1));
+  background-size: 30px 30px;
+  font-color: rgba(120, 180, 255, 0.1);
+  margin: 0px;
+  padding: 0px;
+  font-family: "Hiragino Kaku Gothic ProN", "meiryo", sans-serif;
+  font-weight: normal;
 }
 
 body h3 {
@@ -85,7 +83,7 @@ section {
   #about h3,
   #announcement h3 {
     /*　画面サイズが1024pxからはここを読み込む　*/
-    color: #e95b96;
+    color: #286da7;
     font-size: 2vw;
   }
 }
@@ -94,14 +92,13 @@ section {
 #announcement h4 {
   text-align: center;
   font-size: 4vw;
-  color: #009fbb;
+  color: #286da7;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #about h4,
   #announcement h4 {
     /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    color: #0043be;
     font-size: 24px;
   }
 }
@@ -110,7 +107,6 @@ section {
   #about h4,
   #announcement h4 {
     /*　画面サイズが1024pxからはここを読み込む　*/
-    color: #423eff;
     font-size: 30px;
   }
 }
@@ -118,14 +114,15 @@ section {
 #about p,
 #announcement p {
   margin: 10px 4vw;
+  padding-bottom: 10px;
   line-height: 1.7;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 #about .highlight,
 #announcement .highlight {
   font-weight: bold;
-  border-bottom: solid 2px rgba(55, 200, 245, 0.596);
+  border-bottom: solid 2px rgba(30, 210, 120, 0.6);
 }
 
 footer p {
