@@ -12,7 +12,13 @@
 }
 
 .image02 img {
-  width: 70%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .image02 img {
+    width: 70%;
+  }
 }
 
 body {
@@ -22,7 +28,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Noto Sans JP', 'Osaka', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 body h3 {
@@ -47,7 +53,7 @@ section {
 
 #about,
 #announcement {
-  padding: 20px 2vw;
+  padding: 20px 3vw;
   color: #323232;
 }
 
@@ -67,14 +73,13 @@ section {
 #announcement h3 {
   margin: 0px 4vw;
   padding-top: 20px;
-  font-size: 24px;
+  font-size: 20px;
+  color: #286da7;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #about h3,
   #announcement h3 {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    color: #0043be;
     font-size: 2.2vw;
   }
 }
@@ -82,8 +87,6 @@ section {
 @media screen and (min-width: 1024px) {
   #about h3,
   #announcement h3 {
-    /*　画面サイズが1024pxからはここを読み込む　*/
-    color: #286da7;
     font-size: 2vw;
   }
 }
@@ -91,7 +94,7 @@ section {
 #about h4,
 #announcement h4 {
   text-align: center;
-  font-size: 4vw;
+  font-size: 24px;
   color: #286da7;
 }
 
@@ -99,7 +102,7 @@ section {
   #about h4,
   #announcement h4 {
     /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    font-size: 24px;
+    font-size: 3vw;
   }
 }
 
@@ -107,16 +110,24 @@ section {
   #about h4,
   #announcement h4 {
     /*　画面サイズが1024pxからはここを読み込む　*/
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
 #about p,
 #announcement p {
   margin: 10px 4vw;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  #about p,
+  #announcement p {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    font-size: 18px;
+  }
 }
 
 #about .highlight,
@@ -138,12 +149,29 @@ section {
   display: inline-block;
 }
 
+footer {
+  background-color: white;
+  margin: 0px;
+}
+
 footer p {
   font-size: 14px;
+  margin: 3px;
   font-weight: lighter;
   text-align: center;
-  padding-bottom: 2px;
   color: black;
   border: solid 4px rgba(255, 255, 255, 0);
+}
+
+footer img {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 200px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  footer img {
+    width: 25vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
