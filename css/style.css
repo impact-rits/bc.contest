@@ -1,0 +1,139 @@
+@charset "UTF-8";
+.image {
+  text-align: center;
+}
+
+.image01 img {
+  width: 100%;
+}
+
+.image02 {
+  text-align: center;
+}
+
+.image02 img {
+  width: 70%;
+}
+
+.container1 {
+  text-align: center;
+}
+
+.container1 p {
+  display: inline-block;
+  font-size: 2vw;
+}
+
+body {
+  background-color: white;
+}
+
+body h3 {
+  position: relative;
+  display: inline;
+}
+
+body h3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #2c6fffa8, #2c6fffa8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #2c6fffa8, #2c6fffa8 2px, #fff 2px, #fff 4px);
+}
+
+section {
+  padding: 2vw 0px;
+}
+
+#about,
+#announcement {
+  padding: 20px 2vw;
+  color: #323232;
+}
+
+#about h1,
+#announcement h1 {
+  text-align: center;
+  color: #0043d4;
+  font-size: 3.5vw;
+}
+
+#about h2,
+#announcement h2 {
+  margin: 0px 4vw;
+}
+
+#about h3,
+#announcement h3 {
+  margin: 0px 4vw;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #about h3,
+  #announcement h3 {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    color: #0043be;
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #about h3,
+  #announcement h3 {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    color: #e95b96;
+    font-size: 2vw;
+  }
+}
+
+#about h4,
+#announcement h4 {
+  text-align: center;
+  font-size: 4vw;
+  color: #009fbb;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #about h4,
+  #announcement h4 {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    color: #0043be;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #about h4,
+  #announcement h4 {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    color: #423eff;
+    font-size: 30px;
+  }
+}
+
+#about p,
+#announcement p {
+  margin: 10px 4vw;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+#about .highlight,
+#announcement .highlight {
+  font-weight: bold;
+  border-bottom: solid 2px rgba(55, 200, 245, 0.596);
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  padding-bottom: 2px;
+  color: black;
+  border: solid 4px rgba(255, 255, 255, 0);
+}
+/*# sourceMappingURL=style.css.map */

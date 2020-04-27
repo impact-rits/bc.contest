@@ -1,0 +1,138 @@
+$bgColor:rgb(255, 255, 255);
+$stripeColor1:#2c6fffa8;
+$textColor:rgb(50, 50, 50);
+// $bgColor:rgb(255, 220, 255);
+
+.image {
+        text-align: center;
+}
+
+.image01 {
+        img {
+                width: 100%;
+        }
+}
+
+.image02 {
+        text-align: center;
+
+        img {
+                width: 70%;
+        }
+}
+
+.container1 {
+        text-align: center;
+
+        p {
+                display: inline-block;
+                font-size: 2vw;
+        }
+}
+
+body {
+        background-color: $bgColor;
+
+        h3 {
+                position: relative;
+                display: inline;
+        }
+
+        h3:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                width: 100%;
+                height: 7px;
+                background: -webkit-repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
+                background: repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
+        }
+}
+
+section {
+        padding: 2vw 0px;
+}
+
+#about,
+#announcement {
+        // display: inline-block;
+        // width: 100%;
+        padding: 20px 2vw;
+
+        color: $textColor;
+
+        h1 {
+                text-align: center;
+                color: rgb(0, 67, 212);
+                font-size: 3.5vw;
+        }
+
+
+        h2 {
+                margin: 0px 4vw;
+        }
+
+        h3 {
+                margin: 0px 4vw;
+                font-size: 24px;
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+
+                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+                        color: rgb(0, 67, 190);
+                        font-size: 2.2vw;
+                }
+
+                @media screen and (min-width:1024px) {
+                        /*　画面サイズが1024pxからはここを読み込む　*/
+                        color: rgb(233, 91, 150);
+                        font-size: 2vw;
+                }
+        }
+
+        h4 {
+                text-align: center;
+                // font-size: 30px;
+                font-size: 4vw;
+                color: rgb(0, 159, 187);
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+
+                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+                        color: rgb(0, 67, 190);
+                        font-size: 24px;
+                }
+
+                @media screen and (min-width:1024px) {
+                        /*　画面サイズが1024pxからはここを読み込む　*/
+                        color: rgb(66, 62, 255);
+                        font-size: 30px;
+                }
+        }
+
+        p {
+                margin: 10px 4vw;
+                line-height: 1.7;
+                font-size: 14px;
+        }
+
+        .highlight {
+                font-weight: bold;
+                border-bottom: solid 2px rgba(55, 200, 245, 0.596);
+        }
+
+
+}
+
+
+footer {
+        p {
+                font-size: 14px;
+                font-weight: lighter;
+                text-align: center;
+                padding-bottom: 2px;
+                color: black;
+                border: solid 4px rgba(255, 255, 255, 0);
+        }
+}
