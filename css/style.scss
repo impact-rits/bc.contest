@@ -27,11 +27,20 @@ $mainColor:rgb(40, 109, 167);
                         width: 70%;
 
                 }
+        }
+}
 
+.image03 {
+        text-align: center;
 
+        img {
+                width: 50%;
         }
 
+        // @media screen and (min-width:768px) {
+        //         width: 50%;
 
+        // }
 }
 
 // .container1 {
@@ -78,7 +87,15 @@ section {
         padding: 2vw 0px;
 }
 
+#about {
+        section {
+                border-radius: 6vw;
+                background-color: white;
+        }
+}
+
 #about,
+#rule,
 #announcement {
         // display: inline-block;
         // width: 100%;
@@ -96,6 +113,79 @@ section {
         h2 {
                 margin: 0px 4vw;
         }
+
+        h3 {
+                margin: 0px 4vw;
+                padding-top: 20px;
+                font-size: 20px;
+                color: $mainColor;
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+                        font-size: 2.2vw;
+                }
+
+                @media screen and (min-width:1024px) {
+                        font-size: 32px;
+                }
+        }
+
+        h4 {
+                text-align: center;
+                font-size: 24px;
+                color: $mainColor;
+                margin: 0px 0px;
+                margin-bottom: 20px;
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+
+                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+                        font-size: 3vw;
+                }
+
+                @media screen and (min-width:1024px) {
+                        /*　画面サイズが1024pxからはここを読み込む　*/
+                        font-size: 32px;
+                }
+        }
+
+        p {
+                margin: 10px 4vw;
+                padding: 10px 0px;
+                line-height: 1.7;
+                font-size: 16px;
+
+                @media screen and (min-width:768px) {
+
+                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+                        font-size: 18px;
+                }
+
+
+        }
+
+        .highlight {
+                font-weight: bold;
+                border-bottom: solid 4px rgb(236, 240, 29);
+
+        }
+
+        .highlight-Bold {
+                font-weight: bold;
+        }
+
+        .decoration01 {
+                background-color: white;
+                border-radius: 6vw;
+                border: 4px solid rgb(24, 127, 212);
+                display: inline-block;
+        }
+
+
+}
+
+#judges {
+        padding: 20px 3vw;
+
 
         h3 {
                 margin: 0px 4vw;
@@ -144,20 +234,43 @@ section {
 
         }
 
-        .highlight {
-                font-weight: bold;
-                border-bottom: solid 4px rgb(236, 240, 29);
+
+
+        .member-profile {
+                width: 100%;
+
+                text-align: center;
+
+                .person {
+
+                        text-align: center;
+                        float: left;
+                        width: 30%;
+                        padding-bottom: 30px;
+
+                        .member-image {
+                                text-align: center;
+                                // padding: 20px;
+
+                                img {
+                                        width: 150px;
+                                        padding-bottom: 20px;
+                                }
+
+                        }
+                }
+
+
+
 
         }
 
-        .highlight-Bold {
-                font-weight: bold;
-        }
 
-        .decoration01 {
+
+        .decoration02 {
                 background-color: white;
-                border-radius: 50px;
-                border: 4px solid rgb(24, 127, 212);
+                border-radius: 6vw;
+                border: 4px solid rgb(218, 80, 160);
                 display: inline-block;
         }
 }
