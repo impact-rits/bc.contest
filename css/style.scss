@@ -2,7 +2,7 @@ $bgColor:rgb(255, 255, 255);
 $stripeColor1:#2c6fffa8;
 $textColor:rgb(50, 50, 50);
 $mainColor:rgb(40, 109, 167);
-
+$subColor:rgb(42, 180, 255);
 
 
 
@@ -45,6 +45,24 @@ body {
         .image01 {
                 img {
                         width: 100%;
+                }
+
+                .pc {
+                        display: block !important;
+                }
+
+                .sp {
+                        display: none !important;
+                }
+
+                @media only screen and (max-width: 750px) {
+                        .pc {
+                                display: none !important;
+                        }
+
+                        .sp {
+                                display: block !important;
+                        }
                 }
 
         }
@@ -151,7 +169,7 @@ section {
         h4 {
                 text-align: center;
                 font-size: 24px;
-                color: $mainColor;
+                color: $subColor;
                 margin: 0px 0px;
                 margin-bottom: 20px;
 
@@ -209,7 +227,7 @@ section {
         h4 {
                 text-align: center;
                 font-size: 24px;
-                color: $mainColor;
+                color: $subColor;
 
                 @media screen and (min-width:768px) and (max-width:1024px) {
 
