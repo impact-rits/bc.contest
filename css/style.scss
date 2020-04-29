@@ -169,7 +169,11 @@ section {
         h1 {
                 text-align: center;
                 color: rgb(0, 67, 212);
-                font-size: 3.5vw;
+                font-size: 4.5vw;
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+                        font-size: 3.5vw;
+                }
         }
 
 
@@ -194,7 +198,7 @@ section {
 
         h4 {
                 text-align: center;
-                font-size: 24px;
+                font-size: 30px;
                 color: $subColor;
                 margin: 0px 0px;
                 margin-bottom: 20px;
@@ -214,7 +218,7 @@ section {
         h5 {
                 margin: 0px 4vw;
                 padding-top: 20px;
-                font-size: 18px;
+                font-size: 20px;
                 color: $subColor;
         }
 
@@ -280,7 +284,7 @@ section {
 
 #judges {
         padding: 20px 3vw;
-
+        text-align: center;
 
         h3 {
                 margin: 0px 4vw;
@@ -299,7 +303,7 @@ section {
 
         h4 {
                 text-align: center;
-                font-size: 24px;
+                font-size: 30px;
                 color: $subColor;
 
                 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -333,16 +337,24 @@ section {
                 display: flex;
                 flex-wrap: wrap;
                 background: #fff;
-                width: 100%;
+                width: 90vw;
                 height: auto;
                 padding: 10px;
+                margin: 1vw;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
                 box-sizing: border-box;
+                // justify-content: center;
+                justify-content: space-around;
+                align-content: space-around;
 
                 .box-item {
-                        width: 50%;
+                        width: 200px;
+                        height: 200px;
                         background: $mainColor;
                         text-align: center;
                         padding: 15px 40px;
+                        margin-bottom: 20px;
                         border: 5px solid #fff;
                         box-sizing: border-box;
                         color: white;
@@ -380,4 +392,96 @@ footer {
                         width: 25vw;
                 }
         }
+
+
+        .sns-share {
+                text-align: center;
+
+                display: flex;
+                justify-content: center;
+
+                .item {
+                        margin: 10px;
+                }
+
+                .facebook {
+                        background-color: #2e4a88;
+                        box-shadow: 0 4px 0 #1B3D82;
+                        text-shadow: 0 -1px -1px #1B3D82;
+
+                        display: inline;
+                        position: relative;
+                        font-family: Arial;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 5px;
+                        padding: 14px 20px;
+                }
+
+                .facebook:hover {
+                        background-color: #354F84;
+                }
+
+                .facebook:active {
+                        top: 2px;
+                        box-shadow: 0 2px 0 #1B3D82;
+                }
+
+                .twitter {
+                        background-color: #008DDE;
+                        box-shadow: 0 4px 0 #0078BD;
+
+                        display: inline;
+                        position: relative;
+                        font-family: Arial;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 5px;
+                        padding: 14px 20px;
+                }
+
+                .twitter:active {
+                        top: 2px;
+                        box-shadow: 0 2px 0 #0078BD;
+                }
+
+                .twitter:hover {
+                        background-color: #1397D8;
+                }
+
+                .instagram {
+                        background-color: rgb(224, 19, 146);
+                        box-shadow: 0 4px 0 rgb(155, 14, 101);
+
+
+                        display: inline;
+                        position: relative;
+                        font-family: Arial;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 5px;
+                        padding: 14px 20px;
+                }
+
+                .instagram:active {
+                        top: 2px;
+                        box-shadow: 0 2px 0 rgb(255, 65, 239);
+                }
+
+                .instagram:hover {
+                        background-color: rgb(221, 57, 180);
+                        ;
+                }
+        }
+
+
 }

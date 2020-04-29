@@ -138,7 +138,15 @@ section {
 #announcement h1 {
   text-align: center;
   color: #0043d4;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #about h1,
+  #rule h1,
+  #announcement h1 {
+    font-size: 3.5vw;
+  }
 }
 
 #about h2,
@@ -176,7 +184,7 @@ section {
 #rule h4,
 #announcement h4 {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   color: #2ab4ff;
   margin: 0px 0px;
   margin-bottom: 20px;
@@ -205,7 +213,7 @@ section {
 #announcement h5 {
   margin: 0px 4vw;
   padding-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
   color: #2ab4ff;
 }
 
@@ -292,6 +300,7 @@ section {
 
 #judges {
   padding: 20px 3vw;
+  text-align: center;
 }
 
 #judges h3 {
@@ -315,7 +324,7 @@ section {
 
 #judges h4 {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   color: #2ab4ff;
 }
 
@@ -354,18 +363,27 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: #fff;
-  width: 100%;
+  width: 90vw;
   height: auto;
   padding: 10px;
+  margin: 1vw;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 #judges .judges-info .box-item {
-  width: 50%;
+  width: 200px;
+  height: 200px;
   background: #286da7;
   text-align: center;
   padding: 15px 40px;
+  margin-bottom: 20px;
   border: 5px solid #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -396,5 +414,98 @@ footer img {
   footer img {
     width: 25vw;
   }
+}
+
+footer .sns-share {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .sns-share .item {
+  margin: 10px;
+}
+
+footer .sns-share .facebook {
+  background-color: #2e4a88;
+  -webkit-box-shadow: 0 4px 0 #1B3D82;
+          box-shadow: 0 4px 0 #1B3D82;
+  text-shadow: 0 -1px -1px #1B3D82;
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 20px;
+}
+
+footer .sns-share .facebook:hover {
+  background-color: #354F84;
+}
+
+footer .sns-share .facebook:active {
+  top: 2px;
+  -webkit-box-shadow: 0 2px 0 #1B3D82;
+          box-shadow: 0 2px 0 #1B3D82;
+}
+
+footer .sns-share .twitter {
+  background-color: #008DDE;
+  -webkit-box-shadow: 0 4px 0 #0078BD;
+          box-shadow: 0 4px 0 #0078BD;
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 20px;
+}
+
+footer .sns-share .twitter:active {
+  top: 2px;
+  -webkit-box-shadow: 0 2px 0 #0078BD;
+          box-shadow: 0 2px 0 #0078BD;
+}
+
+footer .sns-share .twitter:hover {
+  background-color: #1397D8;
+}
+
+footer .sns-share .instagram {
+  background-color: #e01392;
+  -webkit-box-shadow: 0 4px 0 #9b0e65;
+          box-shadow: 0 4px 0 #9b0e65;
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 20px;
+}
+
+footer .sns-share .instagram:active {
+  top: 2px;
+  -webkit-box-shadow: 0 2px 0 #ff41ef;
+          box-shadow: 0 2px 0 #ff41ef;
+}
+
+footer .sns-share .instagram:hover {
+  background-color: #dd39b4;
 }
 /*# sourceMappingURL=style.css.map */
