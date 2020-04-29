@@ -185,10 +185,17 @@ section {
                 }
         }
 
+        h5 {
+                margin: 0px 4vw;
+                padding-top: 20px;
+                font-size: 22px;
+                color: $subColor;
+        }
+
         p {
                 margin: 10px 4vw;
                 padding: 10px 0px;
-                line-height: 1.7;
+                line-height: 1.8;
                 font-size: 16px;
 
                 @media screen and (min-width:768px) {
@@ -198,6 +205,44 @@ section {
                 }
 
 
+        }
+
+
+        .container {
+                margin: 10px 4vw;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                // background-color: skyblue;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+
+                p {
+                        margin: 0px;
+                        padding-left: 2vw;
+                }
+
+                h5 {
+                        margin: 0px 2vw;
+                        padding: 0px;
+                }
+
+                .item1 {
+                        order: 1;
+                        flex-basis: 15%;
+
+                        img {
+                                width: 100%;
+                        }
+                }
+
+                .item2 {
+                        order: 2;
+                        flex-basis: 85%;
+                }
         }
 
 
