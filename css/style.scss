@@ -38,7 +38,15 @@ body {
                 background: repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
         }
 
-        @media only screen and (max-width: 550) {
+        .newLine-sp {
+                display: none !important;
+        }
+
+        .newLine-pc {
+                display: block !important;
+        }
+
+        @media only screen and (max-width: 750px) {
 
                 .newLine-sp {
                         display: block !important;
@@ -66,7 +74,7 @@ body {
                         display: none !important;
                 }
 
-                @media only screen and (max-width: 550) {
+                @media only screen and (max-width: 750px) {
                         .pc {
                                 display: none !important;
                         }
@@ -129,13 +137,7 @@ body {
         }
 
 
-        .newLine-sp {
-                display: none !important;
-        }
 
-        .newLine-pc {
-                display: block !important;
-        }
 
 
 
@@ -327,56 +329,31 @@ section {
 
         }
 
-
-
-        // .member-profile {
-        //         width: 100%;
-
-        //         text-align: center;
-
-        //         .person {
-
-        //                 text-align: center;
-        //                 float: left;
-        //                 width: 30%;
-        //                 padding-bottom: 30px;
-
-        //                 .member-image {
-        //                         text-align: center;
-        //                         // padding: 20px;
-
-        //                         img {
-        //                                 width: 150px;
-        //                                 padding-bottom: 20px;
-        //                         }
-
-        //                 }
-        //         }
-
-
-}
-
-
-
-#flexbox {
-        display: flex;
-        flex-wrap: wrap;
-        background: #fff;
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        box-sizing: border-box;
-
-        .box-item {
-                width: 50%;
-                background: $mainColor;
-                text-align: center;
-                padding: 15px 40px;
-                border: 5px solid #fff;
+        .judges-info {
+                display: flex;
+                flex-wrap: wrap;
+                background: #fff;
+                width: 100%;
+                height: auto;
+                padding: 10px;
                 box-sizing: border-box;
-                color: white;
+
+                .box-item {
+                        width: 50%;
+                        background: $mainColor;
+                        text-align: center;
+                        padding: 15px 40px;
+                        border: 5px solid #fff;
+                        box-sizing: border-box;
+                        color: white;
+                }
         }
+
 }
+
+
+
+
 
 
 

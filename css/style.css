@@ -25,7 +25,15 @@ body h3:after {
   background: repeating-linear-gradient(-45deg, #2c6fffa8, #2c6fffa8 2px, #fff 2px, #fff 4px);
 }
 
-@media only screen and (max-width: 550) {
+body .newLine-sp {
+  display: none !important;
+}
+
+body .newLine-pc {
+  display: block !important;
+}
+
+@media only screen and (max-width: 750px) {
   body .newLine-sp {
     display: block !important;
   }
@@ -50,7 +58,7 @@ body .image01 .sp {
   display: none !important;
 }
 
-@media only screen and (max-width: 550) {
+@media only screen and (max-width: 750px) {
   body .image01 .pc {
     display: none !important;
   }
@@ -107,14 +115,6 @@ body .decoration02 {
   border-radius: 6vw;
   border: 4px solid #da50a0;
   display: inline-block;
-}
-
-body .newLine-sp {
-  display: none !important;
-}
-
-body .newLine-pc {
-  display: block !important;
 }
 
 section {
@@ -347,7 +347,7 @@ section {
   }
 }
 
-#flexbox {
+#judges .judges-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,7 +361,7 @@ section {
           box-sizing: border-box;
 }
 
-#flexbox .box-item {
+#judges .judges-info .box-item {
   width: 50%;
   background: #286da7;
   text-align: center;
