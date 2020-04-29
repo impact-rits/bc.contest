@@ -118,6 +118,28 @@ body {
         }
 
 
+        .newLine-sp {
+                display: none !important;
+        }
+
+        .newLine-pc {
+                display: block !important;
+        }
+
+        @media only screen and (max-width: 750px) {
+
+                .newLine-sp {
+                        display: block !important;
+                }
+
+                .newLine-pc {
+                        display: none !important;
+                }
+        }
+
+
+
+
 }
 
 section {
@@ -188,7 +210,7 @@ section {
         h5 {
                 margin: 0px 4vw;
                 padding-top: 20px;
-                font-size: 22px;
+                font-size: 18px;
                 color: $subColor;
         }
 
@@ -229,6 +251,8 @@ section {
                         margin: 0px 2vw;
                         padding: 0px;
                 }
+
+
 
                 .item1 {
                         order: 1;

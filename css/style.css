@@ -100,6 +100,23 @@ body .decoration02 {
   display: inline-block;
 }
 
+body .newLine-sp {
+  display: none !important;
+}
+
+body .newLine-pc {
+  display: block !important;
+}
+
+@media only screen and (max-width: 750px) {
+  body .newLine-sp {
+    display: block !important;
+  }
+  body .newLine-pc {
+    display: none !important;
+  }
+}
+
 section {
   padding: 2vw 0px;
 }
@@ -188,7 +205,7 @@ section {
 #announcement h5 {
   margin: 0px 4vw;
   padding-top: 20px;
-  font-size: 22px;
+  font-size: 18px;
   color: #2ab4ff;
 }
 
