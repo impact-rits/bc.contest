@@ -38,6 +38,17 @@ body {
                 background: repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
         }
 
+        @media only screen and (max-width: 550) {
+
+                .newLine-sp {
+                        display: block !important;
+                }
+
+                .newLine-pc {
+                        display: none !important;
+                }
+        }
+
         .image {
                 text-align: center;
         }
@@ -55,7 +66,7 @@ body {
                         display: none !important;
                 }
 
-                @media only screen and (max-width: 750px) {
+                @media only screen and (max-width: 550) {
                         .pc {
                                 display: none !important;
                         }
@@ -126,16 +137,7 @@ body {
                 display: block !important;
         }
 
-        @media only screen and (max-width: 750px) {
 
-                .newLine-sp {
-                        display: block !important;
-                }
-
-                .newLine-pc {
-                        display: none !important;
-                }
-        }
 
 
 

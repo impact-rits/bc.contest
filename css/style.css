@@ -25,6 +25,15 @@ body h3:after {
   background: repeating-linear-gradient(-45deg, #2c6fffa8, #2c6fffa8 2px, #fff 2px, #fff 4px);
 }
 
+@media only screen and (max-width: 550) {
+  body .newLine-sp {
+    display: block !important;
+  }
+  body .newLine-pc {
+    display: none !important;
+  }
+}
+
 body .image {
   text-align: center;
 }
@@ -41,7 +50,7 @@ body .image01 .sp {
   display: none !important;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 550) {
   body .image01 .pc {
     display: none !important;
   }
@@ -106,15 +115,6 @@ body .newLine-sp {
 
 body .newLine-pc {
   display: block !important;
-}
-
-@media only screen and (max-width: 750px) {
-  body .newLine-sp {
-    display: block !important;
-  }
-  body .newLine-pc {
-    display: none !important;
-  }
 }
 
 section {
