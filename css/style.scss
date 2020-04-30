@@ -183,7 +183,9 @@ section {
 
 #about,
 #rule,
-#announcement {
+#announcement,
+#links {
+
         // display: inline-block;
         // width: 100%;
         padding: 20px 3vw;
@@ -307,6 +309,17 @@ section {
         }
 
 
+        .link-container {
+                padding: 0.5em 1em 0.5em 2.3em;
+                li {
+                        line-height: 1.5;
+                        padding: 0.5em 0;
+                        list-style-type: none;
+                }
+        }
+
+
+
 
 
 }
@@ -399,6 +412,9 @@ section {
 
 
 
+
+
+
 footer {
         background-color: white;
         margin: 0px;
@@ -430,7 +446,7 @@ footer {
                 justify-content: center;
 
                 .item {
-                        margin: 10px;
+                        margin: 1px;
                 }
 
                 .facebook {

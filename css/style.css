@@ -149,7 +149,8 @@ section {
 
 #about,
 #rule,
-#announcement {
+#announcement,
+#links {
   padding: 20px 3vw;
   color: #323232;
   letter-spacing: 0.2vw;
@@ -157,7 +158,8 @@ section {
 
 #about h1,
 #rule h1,
-#announcement h1 {
+#announcement h1,
+#links h1 {
   letter-spacing: 0px;
   text-align: center;
   color: #0043d4;
@@ -167,20 +169,23 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #about h1,
   #rule h1,
-  #announcement h1 {
+  #announcement h1,
+  #links h1 {
     font-size: 3.5vw;
   }
 }
 
 #about h2,
 #rule h2,
-#announcement h2 {
+#announcement h2,
+#links h2 {
   margin: 0px 4vw;
 }
 
 #about h3,
 #rule h3,
-#announcement h3 {
+#announcement h3,
+#links h3 {
   margin: 0px 4vw;
   padding-top: 20px;
   font-size: 22px;
@@ -190,7 +195,8 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #about h3,
   #rule h3,
-  #announcement h3 {
+  #announcement h3,
+  #links h3 {
     font-size: 2.2vw;
   }
 }
@@ -198,14 +204,16 @@ section {
 @media screen and (min-width: 1024px) {
   #about h3,
   #rule h3,
-  #announcement h3 {
+  #announcement h3,
+  #links h3 {
     font-size: 32px;
   }
 }
 
 #about h4,
 #rule h4,
-#announcement h4 {
+#announcement h4,
+#links h4 {
   text-align: center;
   font-size: 26px;
   color: #2ab4ff;
@@ -216,7 +224,8 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #about h4,
   #rule h4,
-  #announcement h4 {
+  #announcement h4,
+  #links h4 {
     /*　画面サイズが768pxから1024pxまではここを読み込む　*/
     font-size: 3vw;
   }
@@ -225,7 +234,8 @@ section {
 @media screen and (min-width: 1024px) {
   #about h4,
   #rule h4,
-  #announcement h4 {
+  #announcement h4,
+  #links h4 {
     /*　画面サイズが1024pxからはここを読み込む　*/
     font-size: 32px;
   }
@@ -233,7 +243,8 @@ section {
 
 #about h5,
 #rule h5,
-#announcement h5 {
+#announcement h5,
+#links h5 {
   margin: 0px 4vw;
   padding-top: 20px;
   font-size: 20px;
@@ -242,7 +253,8 @@ section {
 
 #about p,
 #rule p,
-#announcement p {
+#announcement p,
+#links p {
   margin: 10px 4vw;
   padding: 10px 0px;
   line-height: 1.8;
@@ -252,7 +264,8 @@ section {
 @media screen and (min-width: 768px) {
   #about p,
   #rule p,
-  #announcement p {
+  #announcement p,
+  #links p {
     /*　画面サイズが768pxから1024pxまではここを読み込む　*/
     font-size: 18px;
   }
@@ -260,7 +273,8 @@ section {
 
 #about .container,
 #rule .container,
-#announcement .container {
+#announcement .container,
+#links .container {
   margin: 10px 4vw;
   padding-top: 10px;
   padding-bottom: 30px;
@@ -283,21 +297,24 @@ section {
 
 #about .container p,
 #rule .container p,
-#announcement .container p {
+#announcement .container p,
+#links .container p {
   margin: 0px;
   padding-left: 2vw;
 }
 
 #about .container h5,
 #rule .container h5,
-#announcement .container h5 {
+#announcement .container h5,
+#links .container h5 {
   margin: 0px 2vw;
   padding: 0px;
 }
 
 #about .container .item1,
 #rule .container .item1,
-#announcement .container .item1 {
+#announcement .container .item1,
+#links .container .item1 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -307,18 +324,36 @@ section {
 
 #about .container .item1 img,
 #rule .container .item1 img,
-#announcement .container .item1 img {
+#announcement .container .item1 img,
+#links .container .item1 img {
   width: 100%;
 }
 
 #about .container .item2,
 #rule .container .item2,
-#announcement .container .item2 {
+#announcement .container .item2,
+#links .container .item2 {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
   -ms-flex-preferred-size: 85%;
       flex-basis: 85%;
+}
+
+#about .link-container,
+#rule .link-container,
+#announcement .link-container,
+#links .link-container {
+  padding: 0.5em 1em 0.5em 2.3em;
+}
+
+#about .link-container li,
+#rule .link-container li,
+#announcement .link-container li,
+#links .link-container li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none;
 }
 
 #judges {
@@ -450,7 +485,7 @@ footer .sns-share {
 }
 
 footer .sns-share .item {
-  margin: 10px;
+  margin: 1px;
 }
 
 footer .sns-share .facebook {
