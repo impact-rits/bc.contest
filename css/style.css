@@ -137,14 +137,17 @@ body .decoration02 {
 body .btn1 {
   display: block;
   height: 60px;
-  width: 260px;
+  width: 240px;
   background-color: #ff169e;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 50px;
+  border-radius: 30px;
   position: relative;
   margin: 20px auto;
+  letter-spacing: 2px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 body .btn1 a {
@@ -156,10 +159,10 @@ body .btn1 a {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 37px;
+  height: 24px;
   padding: 0px !important;
   margin: auto !important;
-  font-size: 30px !important;
+  font-size: 20px !important;
   color: white;
   text-decoration: none;
   -webkit-transition: color 0.65s;
@@ -171,8 +174,12 @@ body .btn1 a:visited:not(:hover):not(:active) {
   color: #ffffff;
 }
 
-body .btn1 a:hover {
-  color: #ffc800;
+body .btn1:hover {
+  background-color: #f5c000;
+}
+
+body .btn1:active {
+  color: #f5c000;
 }
 
 section {
