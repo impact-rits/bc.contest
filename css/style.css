@@ -9,9 +9,43 @@ body {
   font-weight: 400;
 }
 
+body h1 {
+  letter-spacing: 0px;
+  text-align: center;
+  color: #0043d4;
+  font-size: 4.5vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body h1 {
+    font-size: 3.5vw;
+  }
+}
+
+body h2 {
+  margin: 0px 4vw;
+  color: #286da7;
+}
+
 body h3 {
+  margin: 0px 4vw;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #286da7;
   position: relative;
   display: inline;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body h3 {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body h3 {
+    font-size: 2vw;
+  }
 }
 
 body h3:after {
@@ -23,6 +57,49 @@ body h3:after {
   height: 7px;
   background: -webkit-repeating-linear-gradient(-45deg, #2c6fffa8, #2c6fffa8 2px, #fff 2px, #fff 4px);
   background: repeating-linear-gradient(-45deg, #2c6fffa8, #2c6fffa8 2px, #fff 2px, #fff 4px);
+}
+
+body h4 {
+  text-align: center;
+  font-size: 26px;
+  color: #2ab4ff;
+  margin: 0px 0px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body h4 {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body h4 {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+    font-size: 32px;
+  }
+}
+
+body h5 {
+  margin: 0px 4vw;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #2ab4ff;
+}
+
+body p {
+  margin: 10px 4vw;
+  padding: 10px 0px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  body p {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    font-size: 18px;
+  }
 }
 
 body .newLine-sp {
@@ -43,7 +120,6 @@ body .newLine-pc {
 }
 
 body .img {
-  vertical-align: middle;
   line-height: 1.0em;
   display: block;
 }
@@ -90,7 +166,6 @@ body .image02 img {
 
 body .PR-images {
   text-align: center;
-  position: relative;
   width: 100%;
   -webkit-filter: drop-shadow(0 2px 4px black);
           filter: drop-shadow(0 2px 4px black);
@@ -98,6 +173,7 @@ body .PR-images {
 
 body .PR-images img {
   width: 30%;
+  margin: 20px 0px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -148,9 +224,12 @@ body .btn1 {
   letter-spacing: 2px;
   cursor: pointer;
   overflow: hidden;
+  -webkit-transition: color 0.65s;
+  transition: color 0.65s;
 }
 
 body .btn1 a {
+  font-weight: bold;
   position: absolute;
   display: block;
   width: 100%;
@@ -165,9 +244,6 @@ body .btn1 a {
   font-size: 20px !important;
   color: white;
   text-decoration: none;
-  -webkit-transition: color 0.65s;
-  transition: color 0.65s;
-  font-weight: bold;
 }
 
 body .btn1 a:visited:not(:hover):not(:active) {
@@ -179,10 +255,10 @@ body .btn1:hover {
 }
 
 body .btn1:active {
-  color: #f5c000;
+  background-color: #f5c000;
 }
 
-section {
+body section {
   padding: 2vw 0px;
 }
 
@@ -205,122 +281,7 @@ section {
 #links {
   padding: 20px 3vw;
   color: #323232;
-  letter-spacing: 0.2vw;
-}
-
-#about h1,
-#rule h1,
-#announcement h1,
-#links h1 {
-  letter-spacing: 0px;
-  text-align: center;
-  color: #0043d4;
-  font-size: 4.5vw;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #about h1,
-  #rule h1,
-  #announcement h1,
-  #links h1 {
-    font-size: 3.5vw;
-  }
-}
-
-#about h2,
-#rule h2,
-#announcement h2,
-#links h2 {
-  margin: 0px 4vw;
-}
-
-#about h3,
-#rule h3,
-#announcement h3,
-#links h3 {
-  margin: 0px 4vw;
-  padding-top: 20px;
-  font-size: 22px;
-  color: #286da7;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #about h3,
-  #rule h3,
-  #announcement h3,
-  #links h3 {
-    font-size: 2.2vw;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #about h3,
-  #rule h3,
-  #announcement h3,
-  #links h3 {
-    font-size: 32px;
-  }
-}
-
-#about h4,
-#rule h4,
-#announcement h4,
-#links h4 {
-  text-align: center;
-  font-size: 26px;
-  color: #2ab4ff;
-  margin: 0px 0px;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #about h4,
-  #rule h4,
-  #announcement h4,
-  #links h4 {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    font-size: 3vw;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #about h4,
-  #rule h4,
-  #announcement h4,
-  #links h4 {
-    /*　画面サイズが1024pxからはここを読み込む　*/
-    font-size: 32px;
-  }
-}
-
-#about h5,
-#rule h5,
-#announcement h5,
-#links h5 {
-  margin: 0px 4vw;
-  padding-top: 20px;
-  font-size: 20px;
-  color: #2ab4ff;
-}
-
-#about p,
-#rule p,
-#announcement p,
-#links p {
-  margin: 10px 4vw;
-  padding: 10px 0px;
-  line-height: 1.8;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  #about p,
-  #rule p,
-  #announcement p,
-  #links p {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    font-size: 18px;
-  }
+  letter-spacing: 0.15vw;
 }
 
 #about .container,
@@ -411,59 +372,6 @@ section {
 #judges {
   padding: 20px 3vw;
   text-align: center;
-}
-
-#judges h3 {
-  margin: 0px 4vw;
-  padding-top: 20px;
-  font-size: 20px;
-  color: #286da7;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #judges h3 {
-    font-size: 2.2vw;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #judges h3 {
-    font-size: 2vw;
-  }
-}
-
-#judges h4 {
-  text-align: center;
-  font-size: 30px;
-  color: #2ab4ff;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #judges h4 {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    font-size: 3vw;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #judges h4 {
-    /*　画面サイズが1024pxからはここを読み込む　*/
-    font-size: 32px;
-  }
-}
-
-#judges p {
-  margin: 10px 4vw;
-  padding: 10px 0px;
-  line-height: 1.7;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  #judges p {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    font-size: 18px;
-  }
 }
 
 #judges .judges-info {

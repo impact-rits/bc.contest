@@ -22,9 +22,38 @@ body {
 
         font-weight: 400;
 
+        h1 {
+                letter-spacing: 0px;
+                text-align: center;
+                color: rgb(0, 67, 212);
+                font-size: 4.5vw;
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+                        font-size: 3.5vw;
+                }
+        }
+
+
+        h2 {
+                margin: 0px 4vw;
+                color: $mainColor;
+        }
+
         h3 {
+                margin: 0px 4vw;
+                padding-top: 20px;
+                font-size: 20px;
+                color: $mainColor;
                 position: relative;
                 display: inline;
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+                        font-size: 2.2vw;
+                }
+
+                @media screen and (min-width:1024px) {
+                        font-size: 2vw;
+                }
         }
 
         h3:after {
@@ -37,6 +66,48 @@ body {
                 background: -webkit-repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
                 background: repeating-linear-gradient(-45deg, $stripeColor1, $stripeColor1 2px, #fff 2px, #fff 4px);
         }
+
+        h4 {
+                text-align: center;
+                font-size: 26px;
+                color: $subColor;
+                margin: 0px 0px;
+                margin-bottom: 20px;
+
+                @media screen and (min-width:768px) and (max-width:1024px) {
+
+                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+                        font-size: 3vw;
+                }
+
+                @media screen and (min-width:1024px) {
+                        /*　画面サイズが1024pxからはここを読み込む　*/
+                        font-size: 32px;
+                }
+        }
+
+        h5 {
+                margin: 0px 4vw;
+                padding-top: 20px;
+                font-size: 20px;
+                color: $subColor;
+        }
+
+        p {
+                margin: 10px 4vw;
+                padding: 10px 0px;
+                line-height: 1.8;
+                font-size: 16px;
+
+                @media screen and (min-width:768px) {
+
+                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+                        font-size: 18px;
+                }
+
+
+        }
+
 
         .newLine-sp {
                 display: none !important;
@@ -59,7 +130,7 @@ body {
 
 
         .img {
-                vertical-align: middle;
+                // vertical-align: middle;
                 line-height: 1.0em;
                 display: block;
         }
@@ -169,17 +240,13 @@ body {
 
                 margin: 20px auto;
 
-
                 letter-spacing: 2px;
                 cursor: pointer;
                 overflow: hidden;
                 transition: color 0.65s;
 
-
-
-
-
                 a {
+                        font-weight: bold;
                         position: absolute;
                         display: block;
                         width: 100%;
@@ -193,10 +260,7 @@ body {
                         margin: auto !important;
                         font-size: 20px !important;
                         color: white;
-
                         text-decoration: none;
-
-                        font-weight: bold;
                 }
 
 
@@ -213,17 +277,15 @@ body {
         }
 
         .btn1:active {
-                background-color: : rgb(245, 192, 0);
+                background-color: rgb(245, 192, 0);
         }
 
 
-
-
+        section {
+                padding: 2vw 0px;
+        }
 }
 
-section {
-        padding: 2vw 0px;
-}
 
 #top {
         background: linear-gradient(-135deg, rgb(255, 66, 183), #9941D8);
@@ -247,88 +309,9 @@ section {
 #announcement,
 #links {
 
-        // display: inline-block;
-        // width: 100%;
         padding: 20px 3vw;
-
         color: $textColor;
-
-
-        letter-spacing: 0.2vw;
-
-
-        h1 {
-                letter-spacing: 0px;
-                text-align: center;
-                color: rgb(0, 67, 212);
-                font-size: 4.5vw;
-
-                @media screen and (min-width:768px) and (max-width:1024px) {
-                        font-size: 3.5vw;
-                }
-        }
-
-
-        h2 {
-                margin: 0px 4vw;
-        }
-
-        h3 {
-                margin: 0px 4vw;
-                padding-top: 20px;
-                font-size: 22px;
-                color: $mainColor;
-
-                @media screen and (min-width:768px) and (max-width:1024px) {
-                        font-size: 2.2vw;
-                }
-
-                @media screen and (min-width:1024px) {
-                        font-size: 32px;
-                }
-        }
-
-        h4 {
-                text-align: center;
-                font-size: 26px;
-                color: $subColor;
-                margin: 0px 0px;
-                margin-bottom: 20px;
-
-                @media screen and (min-width:768px) and (max-width:1024px) {
-
-                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-                        font-size: 3vw;
-                }
-
-                @media screen and (min-width:1024px) {
-                        /*　画面サイズが1024pxからはここを読み込む　*/
-                        font-size: 32px;
-                }
-        }
-
-        h5 {
-                margin: 0px 4vw;
-                padding-top: 20px;
-                font-size: 20px;
-                color: $subColor;
-        }
-
-        p {
-                margin: 10px 4vw;
-                padding: 10px 0px;
-                line-height: 1.8;
-                font-size: 16px;
-
-                @media screen and (min-width:768px) {
-
-                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-                        font-size: 18px;
-                }
-
-
-        }
-
+        letter-spacing: 0.15vw;
 
         .container {
                 margin: 10px 4vw;
@@ -369,7 +352,6 @@ section {
                 }
         }
 
-
         .link-container {
                 padding: 0.5em 1em 0.5em 2.3em;
 
@@ -379,63 +361,11 @@ section {
                         list-style-type: none;
                 }
         }
-
-
-
-
-
 }
 
 #judges {
         padding: 20px 3vw;
         text-align: center;
-
-        h3 {
-                margin: 0px 4vw;
-                padding-top: 20px;
-                font-size: 20px;
-                color: $mainColor;
-
-                @media screen and (min-width:768px) and (max-width:1024px) {
-                        font-size: 2.2vw;
-                }
-
-                @media screen and (min-width:1024px) {
-                        font-size: 2vw;
-                }
-        }
-
-        h4 {
-                text-align: center;
-                font-size: 30px;
-                color: $subColor;
-
-                @media screen and (min-width:768px) and (max-width:1024px) {
-
-                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-                        font-size: 3vw;
-                }
-
-                @media screen and (min-width:1024px) {
-                        /*　画面サイズが1024pxからはここを読み込む　*/
-                        font-size: 32px;
-                }
-        }
-
-        p {
-                margin: 10px 4vw;
-                padding: 10px 0px;
-                line-height: 1.7;
-                font-size: 16px;
-
-                @media screen and (min-width:768px) {
-
-                        /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-                        font-size: 18px;
-                }
-
-
-        }
 
         .judges-info {
                 display: flex;
@@ -466,15 +396,6 @@ section {
         }
 
 }
-
-
-
-
-
-
-
-
-
 
 
 footer {
