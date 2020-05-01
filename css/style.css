@@ -182,6 +182,26 @@ body .PR-images img {
   }
 }
 
+body .PR-images2 {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+body .PR-images2 img {
+  width: 20%;
+  margin: 20px 0px;
+  border-radius: 20px 70px !important;
+  border: 12px solid skyblue;
+  margin: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  body .PR-images2 img {
+    width: 90%;
+  }
+}
+
 body .highlight {
   font-weight: bold;
   border-bottom: solid 4px #ecf01d;
