@@ -200,10 +200,21 @@ body {
                 width: 100%;
                 margin-top: 40px;
 
+                h2 {
+                        margin: 0px;
+                        margin-bottom: 15px;
+                        margin-top: 20px;
+                }
+
+                p {
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                }
 
                 img {
                         width: 20%;
-                        margin: 20px 0px;
+                        margin: 20px 0;
+
                         border-radius: 20px 70px !important;
                         border: 12px solid skyblue;
                         margin: 0;
@@ -299,10 +310,10 @@ body {
                 background-color: rgb(245, 192, 0);
         }
 
-
         section {
                 padding: 2vw 0px;
         }
+
 }
 
 
@@ -331,6 +342,7 @@ body {
         padding: 20px 3vw;
         color: $textColor;
         letter-spacing: 0.15vw;
+
 
         .container {
                 margin: 10px 4vw;
