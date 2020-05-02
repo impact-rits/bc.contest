@@ -17,13 +17,12 @@
         <meta property="og:locale" content="ja_JP" />
 
 
-
-
+        <link rel="stylesheet" href="css/loading.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
 
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 
         <link rel="icon" href="favicon.ico" />
@@ -32,7 +31,6 @@
 </head>
 
 <body>
-
         <article id="top">
                 <div class="image01">
                         <img class="sp" src="./img/top-sp.png" alt="top">
@@ -71,7 +69,7 @@
                                         class="highlight-Bold1">入学式がなかったり</span>様々なイベントが中止されています。
                                 このコンテストは、そんな私たちの青春を奪ったコロナの流行を乗り越えるために開催されます。
                                 そして、全国の高校生のコロナ生活や、新しく学んだことを募集し、それらを<span class="highlight-Bold1">オープンに</span>することで、<span
-                                        class="highlight-Bold1">日本全体に希望をもたらせよう</span>というのが、このプロジェクトの発端です。みなさんも応募して日本を明るくしていきませんか？<br>ルールはこちら↓
+                                        class="highlight-Bold1">日本全体に希望をもたらせよう</span>というのが、このプロジェクトの発端です。みなさんも応募して日本を明るくしていきませんか？
                         </p>
 
 
@@ -94,11 +92,7 @@
                                         学生から日本を変えて</font>いければなと思っています。コロナの影響でどんなことが起こったのかを次の世代にも伝えていくのも、私たちの使命です。
                         </p> -->
 
-                        <h4 style="text-align: center; font-size: 20px; margin: 0;">ルールを見るをクリック！</h4>
-                        <div class="btn1">
-                                <div class="btn-shadow"></div>
-                                <a href="rules.html">ルールを見る</a>
-                        </div>
+
                         <h1 style="font-weight:bold;">今回のビヨンド・コロナ・コンテストでは全部で3つ</h1>
                         <div class="image02">
                                 <img src="img/covid19contest-challenge.svg" alt="部門ｓ">
@@ -134,6 +128,12 @@
                                         <p style="font-size: 80%; margin: 0; padding-top: 0; color:rgb(126, 27, 255);">
                                                 テーマ:オウエン</p>
                                 </section>
+                        </div>
+
+                        <h4 style="text-align: center; font-size: 20px; margin: 0;">ルールを見るをクリック！</h4>
+                        <div class="btn1">
+                                <div class="btn-shadow"></div>
+                                <a href="rules.html">ルールを見る</a>
                         </div>
 
                 </section>
@@ -285,12 +285,33 @@
 
                 </div>
         </footer>
-        </section>
-        <section id="loading" class="loading">
-                <div class="loading__img">
-                        <img src="https://goo.gl/8XdHq9">
-                </div>
-        </section>
+        <!-- loading  -->
+        <div id="js-loader" class="loader">
+                <div class="loader-animation"></div>
+        </div>
+        <script>$(function () {
+                        // リンクをクリックしたときの処理。外部リンクやページ内移動のスクロールリンクなどではフェードアウトさせたくないので少し条件を加えてる。
+                        $('a[href ^= index.html]' + 'a[target != "_blank"]').click(function () {
+                                var url = $(this).attr('href'); // クリックされたリンクのURLを取得
+                                $('#js-loader').fadeIn(600);    // ローディング画面をフェードイン
+                                setTimeout(function () { location.href = url; }, 800); // URLにリンクする
+                                return false;
+                        });
+                });
+
+                // ページのロードが終わった後の処理
+                $(window).load(function () {
+                        $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
+                });
+
+                // ページのロードが終わらなくても10秒たったら強制的に処理を実行
+                $(function () { setTimeout('stopload()', 10000); });
+                function stopload() {
+                        $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
+                }
+
+        </script>
+        <!-- end loading  -->
 </body>
 
 </html>
