@@ -395,7 +395,7 @@ body section {
 #rule .link-container li,
 #announcement .link-container li,
 #links .link-container li {
-  line-height: 1.5;
+  line-height: 1.3;
   padding: 0.5em 0;
   list-style-type: none;
 }
