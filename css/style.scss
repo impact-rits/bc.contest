@@ -225,6 +225,38 @@ body {
                 }
         }
 
+        .PR-images3 {
+                text-align: center;
+
+                img {
+                        margin: 20px 30px;
+                }
+
+                .pc {
+                        display: block !important;
+                        width: 90%;
+                        text-align: center;
+                }
+
+                .sp {
+                        display: none !important;
+                        width: 300px;
+                }
+
+                @media only screen and (max-width: 750px) {
+                        .pc {
+                                display: none !important;
+                        }
+
+                        .sp {
+                                display: block !important;
+                        }
+                }
+
+
+
+        }
+
 
 
 

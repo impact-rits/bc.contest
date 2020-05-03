@@ -213,6 +213,34 @@ body .PR-images2 img {
   }
 }
 
+body .PR-images3 {
+  text-align: center;
+}
+
+body .PR-images3 img {
+  margin: 20px 30px;
+}
+
+body .PR-images3 .pc {
+  display: block !important;
+  width: 90%;
+  text-align: center;
+}
+
+body .PR-images3 .sp {
+  display: none !important;
+  width: 300px;
+}
+
+@media only screen and (max-width: 750px) {
+  body .PR-images3 .pc {
+    display: none !important;
+  }
+  body .PR-images3 .sp {
+    display: block !important;
+  }
+}
+
 body .highlight {
   font-weight: bold;
   border-bottom: solid 4px #ecf01d;
