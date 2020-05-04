@@ -464,6 +464,11 @@ body section {
           box-sizing: border-box;
 }
 
+#judges .judges-info .box-item img {
+  width: 100%;
+  display: block;
+}
+
 footer {
   background-color: white;
   margin: 0px;
