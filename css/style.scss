@@ -325,13 +325,12 @@ body {
                         text-decoration: none;
                 }
 
-
-
-
-
                 a:visited:not(:hover):not(:active) {
                         color: #ffffff;
                 }
+
+
+
         }
 
         .btn1:hover {
@@ -354,10 +353,7 @@ body {
 
 }
 
-#top-rule {
-        background-image: none;
 
-}
 
 #about {
         section {
@@ -412,6 +408,29 @@ body {
                 .item2 {
                         order: 2;
                         flex-basis: 85%;
+
+
+                        .btn-show {
+                                display: block;
+                                margin-left: 2vw;
+                                height: 40px;
+                                width: 70px;
+                                color: white;
+                                text-align: center;
+                                cursor: pointer;
+                                background-color: rgb(46, 196, 255);
+                                border-radius: 8px;
+                                transition: 0.3s;
+                        }
+
+                        .theme-detail {
+                                display: none;
+                                margin-left: 2vw;
+                                background-color: whitesmoke;
+                                padding: 10px;
+                                border-radius: 10px;
+                                margin-top: 5px;
+                        }
                 }
         }
 
@@ -426,6 +445,7 @@ body {
         }
 }
 
+
 #judges {
         padding: 20px 3vw;
         text-align: center;
@@ -433,7 +453,6 @@ body {
         .judges-info {
                 display: flex;
                 flex-wrap: wrap;
-                background: #fff;
                 width: 90vw;
                 height: auto;
                 padding: 10px;
