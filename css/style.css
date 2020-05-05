@@ -229,7 +229,7 @@ body .PR-images3 .pc {
 
 body .PR-images3 .sp {
   display: none !important;
-  width: 300px;
+  width: 260px;
 }
 
 @media only screen and (max-width: 750px) {
