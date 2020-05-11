@@ -462,7 +462,7 @@ body {
 
         .nav {
 
-                width: 80%;
+                width: 100%;
                 margin: 0 auto;
                 display: block;
 
@@ -471,19 +471,15 @@ body {
                         width: 100%;
                 }
 
-                li {
-                        display: inline;
-                }
-
                 img {
 
                         display: inline-block;
                         width: 70px;
-                        padding: 0 2px;
+                        padding: 0 2vw;
 
-                        @media only screen and (min-width: 600px) {
-                                width: 90px;
-                                padding: 0 20px;
+                        @media only screen and (min-width: 450px) {
+                                width: 100px;
+                                padding: 0 4vw;
                         }
 
 

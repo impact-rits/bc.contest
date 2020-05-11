@@ -480,7 +480,7 @@ body section {
 #announcement .nav,
 #QandA .nav,
 #links .nav {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -495,14 +495,6 @@ body section {
   }
 }
 
-#about .nav li,
-#rule .nav li,
-#announcement .nav li,
-#QandA .nav li,
-#links .nav li {
-  display: inline;
-}
-
 #about .nav img,
 #rule .nav img,
 #announcement .nav img,
@@ -510,17 +502,17 @@ body section {
 #links .nav img {
   display: inline-block;
   width: 70px;
-  padding: 0 2px;
+  padding: 0 2vw;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 450px) {
   #about .nav img,
   #rule .nav img,
   #announcement .nav img,
   #QandA .nav img,
   #links .nav img {
-    width: 90px;
-    padding: 0 20px;
+    width: 100px;
+    padding: 0 4vw;
   }
 }
 
