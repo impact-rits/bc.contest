@@ -28,9 +28,7 @@ body {
                 color: rgb(0, 67, 212);
                 font-size: 4.5vw;
 
-                @media screen and (min-width:768px) and (max-width:1024px) {
-                        font-size: 3.5vw;
-                }
+
         }
 
 
@@ -369,6 +367,9 @@ body {
 #top {
         background: linear-gradient(-135deg, rgb(255, 66, 183), #9941D8);
 
+
+
+
 }
 
 
@@ -383,6 +384,7 @@ body {
 #about,
 #rule,
 #announcement,
+#QandA,
 #links {
 
         padding: 20px 3vw;
@@ -460,6 +462,37 @@ body {
                         padding: 0.5em 0;
                         list-style-type: none;
                 }
+        }
+
+        .nav {
+
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+
+
+                @media only screen and (min-width: 750px) {
+                        width: 100%;
+                }
+
+                li {
+                        display: inline;
+                }
+
+                img {
+
+                        display: inline-block;
+                        width: 70px;
+                        padding: 0 2px;
+
+                        @media only screen and (min-width: 600px) {
+                                width: 90px;
+                                padding: 0 20px;
+                        }
+
+
+                }
+
         }
 }
 

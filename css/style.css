@@ -16,12 +16,6 @@ body h1 {
   font-size: 4.5vw;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  body h1 {
-    font-size: 3.5vw;
-  }
-}
-
 body h2 {
   margin: 0px 4vw;
   color: #286da7;
@@ -351,6 +345,7 @@ body section {
 #about,
 #rule,
 #announcement,
+#QandA,
 #links {
   padding: 20px 3vw;
   color: #323232;
@@ -360,6 +355,7 @@ body section {
 #about .container,
 #rule .container,
 #announcement .container,
+#QandA .container,
 #links .container {
   margin: 10px 4vw;
   padding-top: 10px;
@@ -384,6 +380,7 @@ body section {
 #about .container p,
 #rule .container p,
 #announcement .container p,
+#QandA .container p,
 #links .container p {
   margin: 0px;
   padding-left: 2vw;
@@ -392,6 +389,7 @@ body section {
 #about .container h5,
 #rule .container h5,
 #announcement .container h5,
+#QandA .container h5,
 #links .container h5 {
   margin: 0px 2vw;
   padding: 0px;
@@ -400,6 +398,7 @@ body section {
 #about .container .item1,
 #rule .container .item1,
 #announcement .container .item1,
+#QandA .container .item1,
 #links .container .item1 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -411,6 +410,7 @@ body section {
 #about .container .item1 img,
 #rule .container .item1 img,
 #announcement .container .item1 img,
+#QandA .container .item1 img,
 #links .container .item1 img {
   width: 100%;
 }
@@ -418,6 +418,7 @@ body section {
 #about .container .item2,
 #rule .container .item2,
 #announcement .container .item2,
+#QandA .container .item2,
 #links .container .item2 {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -429,6 +430,7 @@ body section {
 #about .container .item2 .btn-show,
 #rule .container .item2 .btn-show,
 #announcement .container .item2 .btn-show,
+#QandA .container .item2 .btn-show,
 #links .container .item2 .btn-show {
   display: block;
   margin-left: 2vw;
@@ -446,6 +448,7 @@ body section {
 #about .container .item2 .theme-detail,
 #rule .container .item2 .theme-detail,
 #announcement .container .item2 .theme-detail,
+#QandA .container .item2 .theme-detail,
 #links .container .item2 .theme-detail {
   display: none;
   background-color: whitesmoke;
@@ -457,6 +460,7 @@ body section {
 #about .link-container,
 #rule .link-container,
 #announcement .link-container,
+#QandA .link-container,
 #links .link-container {
   padding: 0.5em 1em 0.5em 2.3em;
 }
@@ -464,10 +468,60 @@ body section {
 #about .link-container li,
 #rule .link-container li,
 #announcement .link-container li,
+#QandA .link-container li,
 #links .link-container li {
   line-height: 1.3;
   padding: 0.5em 0;
   list-style-type: none;
+}
+
+#about .nav,
+#rule .nav,
+#announcement .nav,
+#QandA .nav,
+#links .nav {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (min-width: 750px) {
+  #about .nav,
+  #rule .nav,
+  #announcement .nav,
+  #QandA .nav,
+  #links .nav {
+    width: 100%;
+  }
+}
+
+#about .nav li,
+#rule .nav li,
+#announcement .nav li,
+#QandA .nav li,
+#links .nav li {
+  display: inline;
+}
+
+#about .nav img,
+#rule .nav img,
+#announcement .nav img,
+#QandA .nav img,
+#links .nav img {
+  display: inline-block;
+  width: 70px;
+  padding: 0 2px;
+}
+
+@media only screen and (min-width: 600px) {
+  #about .nav img,
+  #rule .nav img,
+  #announcement .nav img,
+  #QandA .nav img,
+  #links .nav img {
+    width: 90px;
+    padding: 0 20px;
+  }
 }
 
 #judges {
