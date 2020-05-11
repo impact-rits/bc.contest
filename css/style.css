@@ -502,7 +502,7 @@ body section {
 #links .nav img {
   display: inline-block;
   width: 70px;
-  padding: 0 2vw;
+  margin: 0 2vw;
 }
 
 @media only screen and (min-width: 450px) {
@@ -512,7 +512,7 @@ body section {
   #QandA .nav img,
   #links .nav img {
     width: 100px;
-    padding: 0 4vw;
+    margin: 0 4vw;
   }
 }
 
