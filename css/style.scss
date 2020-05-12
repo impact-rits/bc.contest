@@ -497,7 +497,12 @@ body {
                         margin: 0 2vw;
 
                         @media only screen and (min-width: 450px) {
-                                width: 100px;
+                                width: 18vw;
+                                margin: 0 4vw;
+                        }
+
+                        @media only screen and (min-width: 600px) {
+                                width: 120px;
                                 margin: 0 4vw;
                         }
 

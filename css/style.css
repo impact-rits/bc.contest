@@ -534,7 +534,18 @@ body section {
   #announcement .nav img,
   #QandA .nav img,
   #links .nav img {
-    width: 100px;
+    width: 18vw;
+    margin: 0 4vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #about .nav img,
+  #rule .nav img,
+  #announcement .nav img,
+  #QandA .nav img,
+  #links .nav img {
+    width: 120px;
     margin: 0 4vw;
   }
 }
