@@ -161,19 +161,42 @@ body .image02 img {
 body .PR-images {
   text-align: center;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   -webkit-filter: drop-shadow(0 2px 4px black);
           filter: drop-shadow(0 2px 4px black);
 }
 
-body .PR-images img {
-  width: 30%;
-  margin: 20px 0px;
+body .PR-images div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0;
+  width: 500px;
 }
 
-@media only screen and (max-width: 750px) {
-  body .PR-images img {
-    width: 100%;
+@media only screen and (min-width: 500px) {
+  body .PR-images div {
+    width: 45%;
+    margin: 20px 1vw;
   }
+}
+
+@media only screen and (min-width: 700px) {
+  body .PR-images div {
+    width: 30%;
+    margin: 20px 1vw;
+  }
+}
+
+body .PR-images div img {
+  width: 100%;
 }
 
 body .PR-images2 {
