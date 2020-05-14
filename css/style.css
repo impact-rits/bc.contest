@@ -550,6 +550,47 @@ body section {
   }
 }
 
+#about .youtube-box,
+#rule .youtube-box,
+#announcement .youtube-box,
+#QandA .youtube-box,
+#links .youtube-box {
+  width: 95%;
+  margin: 20px auto;
+}
+
+@media only screen and (min-width: 500px) {
+  #about .youtube-box,
+  #rule .youtube-box,
+  #announcement .youtube-box,
+  #QandA .youtube-box,
+  #links .youtube-box {
+    width: 70%;
+  }
+}
+
+#about .youtube-box .youtube,
+#rule .youtube-box .youtube,
+#announcement .youtube-box .youtube,
+#QandA .youtube-box .youtube,
+#links .youtube-box .youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+#about .youtube-box .youtube iframe,
+#rule .youtube-box .youtube iframe,
+#announcement .youtube-box .youtube iframe,
+#QandA .youtube-box .youtube iframe,
+#links .youtube-box .youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 #judges {
   padding: 20px 3vw;
   text-align: center;
