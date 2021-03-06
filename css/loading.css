@@ -1,10 +1,12 @@
-html {
+/* html {
         overflow-y: scroll;
-}
+        backface-visibility: hidden;
+} */
 
 
 /* ローディングの背景部分のCSS */
 .loader {
+        backface-visibility: hidden;
         background: rgb(10, 137, 255);
         height: 100%;
         left: 0;
