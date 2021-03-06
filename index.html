@@ -385,10 +385,10 @@
                         <p>
                         <h4>審査委員</h4>
                         <div class="judges-info">
-                                <div class="box-item"><img src="./img/judges/judge-01.svg"> </div>
-                                <div class="box-item"><img src="./img/judges/judge-02.svg"></div>
-                                <div class="box-item"><img src="./img/judges/judge-03.svg"></div>
-                                <div class="box-item"><img src="./img/judges/judge-04.svg"></div>
+                                <div class="box-item"><img src="./img/judges/judge-01.jpg"> </div>
+                                <div class="box-item"><img src="./img/judges/judge-02.jpg"></div>
+                                <div class="box-item"><img src="./img/judges/judge-03.jpg"></div>
+                                <div class="box-item"><img src="./img/judges/judge-04.jpg"></div>
                         </div>
 
                         </p>
@@ -466,23 +466,16 @@
         </article>
 
 
-
-
-
         <footer>
                 <p style="text-align: center; padding: 30px 0px; font-size: 24px; color: rgb(121, 65, 225);">
                         SNSで拡散お願いします！！
                 </p>
                 <div class="sns-share">
-
-
                         <div class="item">
 
                                 <a target="_blank"
                                         href="https://twitter.com/intent/tweet?text=青春をコロナに奪われた中高生が主催する、中高生のためのコンテスト。いっしょにコロナを乗り越えよう。中高生の最近の学びなどを募集中。5/31まで！！%0D%0A&hashtags=ビヨンドコロナ&url=https://impact-rits.github.io/bc.contest/index.html"
                                         class="twitter">Twitter</a>
-
-
                         </div>
 
 
@@ -495,19 +488,18 @@
                 <div style="padding-bottom: 20px;">
                         <p>このコンテストの運営/企画はGENIEが行っています。<br>Design | <a href="https://twitter.com/TomiXRM">Daiki
                                         Tomioka<a> <a href="https://note.com/250ritsumei">Nanami Hirota<a></p>
-
                         <p>&copy; 2020GENIE | Twemoji CC-BY 4.0</p>
-
                 </div>
         </footer>
         <!-- loading  -->
         <div id="js-loader" class="loader">
                 <div class="loader-animation"></div>
         </div>
-        <script>$(function () {
+        <script>
+                $(function () {
                         // リンクをクリックしたときの処理。外部リンクやページ内移動のスクロールリンクなどではフェードアウトさせたくないので少し条件を加えてる。
                         $('a[href ^= index.html]' + 'a[target != "_blank"]').click(function () {
-                                var url = $(this).attr('href'); // クリックされたリンクのURLを取得
+                                let url = $(this).attr('href'); // クリックされたリンクのURLを取得
                                 $('#js-loader').fadeIn(600);    // ローディング画面をフェードイン
                                 setTimeout(function () { location.href = url; }, 800); // URLにリンクする
                                 return false;
@@ -518,9 +510,8 @@
                 $(window).load(function () {
                         $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
                 });
-
-                // ページのロードが終わらなくても10秒たったら強制的に処理を実行
-                $(function () { setTimeout('stopload()', 10000); });
+                // ページのロードが終わらなくても5秒たったら強制的に処理を実行
+                $(function () { setTimeout('stopload()', 4000); });
                 function stopload() {
                         $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
                 }
