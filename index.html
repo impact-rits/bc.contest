@@ -494,6 +494,13 @@
                 <div class="loader-animation"></div>
         </div>
         <script>
+        // ページのロードが終わらなくても5秒たったら強制的に処理を実行
+                $(function () { setTimeout('stopload()', 4000); });
+
+                function stopload() {
+                        $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
+                }
+
                 $(function () {
                         // リンクをクリックしたときの処理。外部リンクやページ内移動のスクロールリンクなどではフェードアウトさせたくないので少し条件を加えてる。
                         $('a[href ^= index.html]' + 'a[target != "_blank"]').click(function () {
@@ -503,16 +510,12 @@
                                 return false;
                         });
                 });
-
                 // ページのロードが終わった後の処理
                 $(window).load(function () {
                         $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
                 });
-                // ページのロードが終わらなくても5秒たったら強制的に処理を実行
-                $(function () { setTimeout('stopload()', 4000); });
-                function stopload() {
-                        $('#js-loader').delay(300).fadeOut(400); //ローディング画面をフェードアウトさせることでメインコンテンツを表示
-                }
+                
+                
 
         </script>
         <!-- end loading  -->
